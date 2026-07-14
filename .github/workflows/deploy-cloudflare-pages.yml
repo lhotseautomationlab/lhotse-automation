@@ -31,7 +31,7 @@ jobs:
       - name: Build for Cloudflare (next-on-pages)
         # This uses the official Cloudflare Next adapter to produce a deployable output directory.
         # The adapter expects --outdir (not --output).
-        run: npx @cloudflare/next-on-pages@latest build --outdir ./out
+        run: npx @cloudflare/next-on-pages@latest --outdir ./out
 
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/pages-action@v1
