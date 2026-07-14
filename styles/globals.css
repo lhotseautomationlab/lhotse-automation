@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #0d9488;
+  --color-primary-hover: #14b8a6;
+  --color-accent: #10b981;
+}
+
+html {
+  @apply scroll-smooth;
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+html, body, #__next {
+  height: 100%;
+}
+
+/* Skip link styles */
+.skip-to-content {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip-to-content:focus {
+  position: static;
+  left: 0;
+  width: auto;
+  height: auto;
+  padding: 0.5rem 1rem;
+  background: white;
+  border: 1px solid rgba(15,23,42,0.1);
+  z-index: 60;
+}
+
+body {
+  @apply bg-white text-slate-800;
+}
+
+a { @apply text-primary; }
+
+.header-blur { backdrop-filter: blur(8px); }
