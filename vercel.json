@@ -1,0 +1,16 @@
+{
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.lhotselab.com"
+        }
+      ],
+      "destination": "https://lhotselab.com/:1",
+      "permanent": true
+    }
+  ]
+}
