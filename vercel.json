@@ -2,14 +2,14 @@
   "cleanUrls": true,
   "redirects": [
     {
-      "source": "/(.*)",
+      "source": "/:path*",
       "has": [
         {
           "type": "host",
           "value": "www.lhotselab.com"
         }
       ],
-      "destination": "https://lhotselab.com/:1",
+      "destination": "https://lhotselab.com/:path*",
       "permanent": true
     }
   ]
