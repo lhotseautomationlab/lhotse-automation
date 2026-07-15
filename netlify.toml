@@ -1,6 +1,5 @@
 [build]
 command = "npm run build"
-functions = "out/.netlify/functions"
 publish = "out"
 
 [build.environment]
